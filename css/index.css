@@ -223,9 +223,9 @@ body {
 }
 @media (max-width: 500px) {
   body {
-    background: purple;
     max-width: 500px;
     margin: 0 auto;
+    background-color: red;
   }
 }
 .home .top-content {
@@ -281,9 +281,22 @@ body {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 75%;
+    margin-left: 40px;
+  }
 }
 .home .content-pick .btn {
   background: #17A2B8;
@@ -297,4 +310,10 @@ body {
   color: #FFFFFF;
   font-size: 2rem;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .home {
+    max-width: 500px;
+    margin: 0 auto;
+  }
 }
