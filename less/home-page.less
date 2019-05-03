@@ -1,14 +1,19 @@
+body {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
 .home {
 
   .top-content {
-    border-top: 2px dashed grey;
+    border-top: 2px dashed @silver;
     width: 80%;
     margin-left: 40px;
     margin-bottom: 50px;
   }
 
   .paragraph {
-    border-bottom: 2px dashed grey;
+    border-bottom: 2px dashed @silver;
     font-size: 1.6rem;
   }
 
@@ -72,7 +77,9 @@
       margin-bottom: 30px;
     }
 
-    
+    .btn {
+      .button();
+    }
    
   }
 }// home
